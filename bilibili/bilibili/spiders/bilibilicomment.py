@@ -8,7 +8,7 @@ class BilibilicommentSpider(scrapy.Spider):
     allowed_domains = ['api.bilibili.com']
     api_url = 'https://api.bilibili.com/pgc/review/short/list?'
     params = {
-        'media_id': '28338491',
+        'media_id': '28237119',
         'ps': '20',
         'sort': '0',
     }

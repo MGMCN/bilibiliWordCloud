@@ -6,8 +6,10 @@
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
+import os
 
 
 class BilibiliPipeline:
     def process_item(self, item, spider):
+        os.system('echo ' + '\"' + item['comment'] + '\"' + '>>' + 'comments.txt')  # 为了方便就这么写了
         return item
