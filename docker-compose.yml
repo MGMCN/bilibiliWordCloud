@@ -1,0 +1,6 @@
+version: "3"
+
+services:
+  bilibili:
+    build: .
+    container_name: bilibili
