@@ -20,3 +20,20 @@ jobs:
     - name: Run build
       run: |
         docker-compose -f "docker-compose.yml" up -d --build
+    
+  test_for_crawler_build_on_MacOS:
+    timeout-minutes: 10
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Install Docker and Docker Compose
+      run: |
+        brew install docker
+        brew install docker-compose
+    
+    - name: Run Docker Compose
+      run: |
+        docker-compose -f "docker-compose.yml" up -d --build
