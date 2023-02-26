@@ -20,5 +20,6 @@ jobs:
     - name: Run build
       run: |
         brew install --cask docker
+        brew install docker-compose
         open /Applications/Docker.app
         docker-compose up
