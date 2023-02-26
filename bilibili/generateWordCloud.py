@@ -20,7 +20,7 @@ for comment in comments:
 wc = WordCloud(
     font_path='./simhei.ttf',
     background_color="white",  # 背景颜色
-    max_words=100,  # 词云显示的最大词数
+    max_words=50,  # 词云显示的最大词数
     max_font_size=500,  # 字体最大值
     min_font_size=20,  # 字体最小值
     random_state=42,  # 随机数
