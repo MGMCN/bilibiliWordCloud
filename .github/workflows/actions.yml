@@ -20,6 +20,7 @@ jobs:
     - name: Run build
       run: |
         brew install docker
+        brew install docker-compose
         docker-compose up
         
   test_for_crawler_on_LinuxUbuntu:
@@ -35,4 +36,5 @@ jobs:
         sudo apt update
         sudo apt upgrade
         sudo apt install docker
+        sudo apt install docker-compose
         docker-compose up
