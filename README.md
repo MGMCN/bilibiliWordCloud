@@ -81,6 +81,7 @@ $ docker compose up --build # 回到docker-compose.yml所在目录。
 $ docker cp bilibili:/proj/bilibili/output.jpg /your/local/path # 待运行结束后执行这个指令
 ```
 ## 如果你想在本地直接运行这个代码而不是在docker里运行
+你需要注意的是这种方式可能因为你下载的python版本不同而失败。
 ```Bash
 $ ls # 先回到这个目录下
 .
