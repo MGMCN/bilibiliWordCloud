@@ -10,7 +10,7 @@ on:
 
 jobs:
   test_for_crawler_build_on_Ubuntu:
-    timeout-minutes: 25
+    timeout-minutes: 10
     runs-on: ubuntu-latest
 
     steps:
