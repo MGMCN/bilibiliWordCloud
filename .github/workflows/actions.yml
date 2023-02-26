@@ -36,4 +36,5 @@ jobs:
     
     - name: Run Docker Compose
       run: |
+        open /Applications/Docker.app
         docker-compose -f "docker-compose.yml" up -d --build
