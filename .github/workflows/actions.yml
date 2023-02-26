@@ -31,9 +31,9 @@ jobs:
       
     - name: Install Docker and Docker Compose
       run: |
-        sudo brew install --cask docker
+        brew install --cask docker
     
     - name: Run Docker Compose
       run: |
-        sudo open /Applications/Docker.app
-        sudo docker-compose -f "docker-compose.yml" up -d --build
+        open /Applications/Docker.app
+        docker-compose -f "docker-compose.yml" up -d --build
