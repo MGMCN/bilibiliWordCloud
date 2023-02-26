@@ -1,6 +1,6 @@
 # bilibiliWordCloud
 ![image](https://img.shields.io/github/actions/workflow/status/MGMCN/bilibiliWordCloud/actions.yml?label=build&logo=github)
-![image](https://img.shields.io/github/license/MGMCN/bilibiliWordCloud)
+![image](https://img.shields.io/github/license/MGMCN/bilibiliWordCloud?)
 
 该程序实现了利用基于scrapy框架编写的爬虫程序爬取b站番剧短评，然后利用jieba库对爬取的短评分词，最后使用wordcloud展示的功能。( ps: 多年前写的代码，最近偶然整理文件夹时看到了，跑了一下居然还能用，觉得还挺有趣，就传上来了。)
 ## 怎么运行这个代码
