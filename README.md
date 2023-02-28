@@ -35,11 +35,11 @@ $ docker cp bilibili:/proj/bilibili/output.jpg /your/local/path # 别忘记了�
 <img src="https://github.com/MGMCN/bilibiliWordCloud/blob/main/bilibili/output.jpg" width = "435" height = "300"/>  
 
 ## 怎么修改这个代码爬取的番剧
-打开你的b站找到你部你想爬取的番剧或者电影，只要有短评这个选项的都能爬。( ps: 注意是短评不是评论🤪. ) 点击查看全部。   
+打开你的b站找到一部你想爬取的番剧或者电影，只要有短评这个选项的都能爬。( ps: 请注意是短评不是评论🤪. ) 然后点击下面图示中的查看全部选项。   
 
 <img src="./images/page.png" width = "1140" height = "500"/>  
 
-复制打开页面的链接里md后面的那串数字，在这个例子中是'1586'
+复制打开页面的链接中md后面的那串数字，在这个例子中是'1586'
 
 <img src="./images/link.png" width = "790" height = "66"/>  
 
@@ -81,7 +81,7 @@ $ docker compose up --build # 回到docker-compose.yml所在目录。
 $ docker cp bilibili:/proj/bilibili/output.jpg /your/local/path # 待运行结束后执行这个指令
 ```
 ## 如果你想在本地直接运行这个代码而不是在docker里运行
-你需要注意的是这种方式可能因为你下载的python版本不同而失败。
+你需要注意的是这种运行方式可能因为你自己下载的python版本不同而失败。
 ```Bash
 $ ls # 先回到这个目录下
 .
