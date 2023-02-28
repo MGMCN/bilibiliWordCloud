@@ -93,6 +93,9 @@ $ ls # 先回到这个目录下
 ├── images
 └── requirements.txt
 $ sudo pip3 install -r requirements.txt
+.
+.
+.
 $ cd bilibili
 $ chmod +x run.sh
 $ ./run.sh
