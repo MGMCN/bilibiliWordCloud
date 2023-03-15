@@ -27,6 +27,6 @@ runs:
       with:
         context: .
         file: ./Dockerfile
-        platforms: linux/arm64,linux/amd64,windows/amd64
+        platforms: linux/arm64,linux/amd64
         push: true
         tags: godmountain/bilibili-wordcloud:latest, godmountain/bilibili-wordcloud:${{ github.ref_name }}
