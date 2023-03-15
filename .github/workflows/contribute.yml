@@ -14,9 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Run build
-      run: |
-        docker build . -t bilibili
+      - name: call docker-build workflow
+        uses: ./.github/actions/docker
