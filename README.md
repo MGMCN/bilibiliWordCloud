@@ -15,16 +15,16 @@ $ open /Applications/Docker.app
 ```
 在docker容器中运行我们的代码
 ```Bash
-$ ls # 先确保你在的目录下有docker-compose.yml文件
+$ ls # 先确保你在的目录下有Dockerfile文件
 .
 ├── Dockerfile
 ├── LICENSE
 ├── README.md
 ├── bilibili
-├── docker-compose.yml
 ├── images
 └── requirements.txt
-$ docker compose up --build # 执行这个指令
+$ docker build . bilibili
+$ docker run --name bilibili bilibili
 ```
 等待程序执行结束后将wordcloud生成的图片拷贝到本地查看
 ```Bash
@@ -43,66 +43,14 @@ $ docker cp bilibili:/proj/bilibili/output.jpg /your/local/path # 别忘记了�
 
 <img src="./images/link.png" width = "790" height = "66"/>  
 
-然后在我们的工程里找到下面这个文件
+然后在docker run的启动指令里添加你的media_id
 ```Bash
-$ ls
-.
-├── Dockerfile
-├── LICENSE
-├── README.md
-├── bilibili
-│   ├── bilibili
-│   │   ├── __init__.py
-│   │   ├── items.py
-│   │   ├── middlewares.py
-│   │   ├── pipelines.py
-│   │   ├── settings.py
-│   │   └── spiders
-│   │       ├── __init__.py
-│   │       └── bilibilicomment.py # 👈🏻打开这个文件
-.
-.
-.
-```
-编辑下面media_id的参数
-```Python
-params = {
-  'media_id': '1586', # 👈🏻替换这个id为你拷贝的md后面那串数字
-  'ps': '20',
-  'sort': '0',
-}
-```
-然后再次执行docker-compose指令( ps: 请确保你的docker已经启动。 )
-```Bash
-$ docker compose up --build # 回到docker-compose.yml所在目录。
+$ docker rm bilibili
+$ docker run --name bilibili -e media_id=1586 bilibili # 👈🏻
 .
 .
 .
 $ docker cp bilibili:/proj/bilibili/output.jpg /your/local/path # 待运行结束后执行这个指令
-```
-## 如果你想在本地直接运行这个代码而不是在docker里运行
-你需要注意的是这种运行方式可能因为你自己下载的python版本不同而失败。
-```Bash
-$ ls # 先回到这个目录下
-.
-├── Dockerfile
-├── LICENSE
-├── README.md
-├── bilibili
-├── docker-compose.yml
-├── images
-└── requirements.txt
-$ sudo pip3 install -r requirements.txt
-.
-.
-.
-$ cd bilibili
-$ chmod +x run.sh
-$ ./run.sh
-.
-.
-.
-$ open output.jpg # 因为是在本地运行的代码，生成的图片就直接输出在本地当前目录下了
 ```
 
 

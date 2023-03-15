@@ -1,18 +1,25 @@
 import scrapy
 from urllib.parse import urlencode
 from bilibili.items import BilibiliItem
+from dotenv import load_dotenv
+import os
 
 
 class BilibilicommentSpider(scrapy.Spider):
     name = 'bilibilicomment'
     allowed_domains = ['api.bilibili.com']
     api_url = 'https://api.bilibili.com/pgc/review/short/list?'
-    params = {
-        'media_id': '1586',
-        'ps': '20',
-        'sort': '0',
-    }
-    start_urls = [api_url + urlencode(params)]
+
+    def __init__(self, *args, **kwargs):
+        load_dotenv()
+        media_id = os.getenv('media_id')
+        super(BilibilicommentSpider, self).__init__(*args, **kwargs)
+        self.params = {
+            'media_id': media_id,
+            'ps': '20',
+            'sort': '0',
+        }
+        self.start_urls = [self.api_url + urlencode(self.params)]
 
     def parse(self, response):
         json = response.json()
