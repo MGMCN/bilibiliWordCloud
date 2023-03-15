@@ -1,5 +1,5 @@
 # bilibiliWordCloud
-![image](https://img.shields.io/github/actions/workflow/status/MGMCN/bilibiliWordCloud/actions.yml?label=build&logo=github)
+![image](https://img.shields.io/github/actions/workflow/status/MGMCN/bilibiliWordCloud/contribute.yml?label=build&logo=github)
 ![image](https://img.shields.io/github/last-commit/MGMCN/bilibiliWordCloud?logo=github)
 ![image](https://img.shields.io/github/license/MGMCN/bilibiliWordCloud)  
 
