@@ -1,6 +1,6 @@
 # bilibiliWordCloud
 ![image](https://img.shields.io/github/actions/workflow/status/MGMCN/bilibiliWordCloud/release.yml?label=build&logo=github)
-![image](https://img.shields.io/docker/pulls/godmountain/bilibili-wordcloud)
+![image](https://img.shields.io/docker/pulls/godmountain/bilibili-wordcloud?logo=docker)
 ![image](https://img.shields.io/github/last-commit/MGMCN/bilibiliWordCloud?logo=github)
 ![image](https://img.shields.io/github/license/MGMCN/bilibiliWordCloud)  
 
