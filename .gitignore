@@ -131,3 +131,6 @@ dmypy.json
 # MacOS
 .DS_Store
 *.txt
+
+#Pycharm
+.idea/
