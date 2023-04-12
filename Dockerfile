@@ -16,6 +16,7 @@ RUN apk --update-cache add \
     build-base \
     bash \
     libffi-dev && \
+    pip3 install --upgrade pip && \
     pip3 install -r requirements.txt
 
 WORKDIR /proj/bilibili
