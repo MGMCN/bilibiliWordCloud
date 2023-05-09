@@ -42,7 +42,7 @@ $ ls # 先确保你在的目录下有Dockerfile文件
 ├── bilibili
 ├── images
 └── requirements.txt
-$ docker build . bilibili
+$ docker build . -t bilibili
 $ docker run --name bilibili -e media_id=1586 bilibili
 ```
 等待程序执行结束后将wordcloud生成的图片拷贝到本地查看
