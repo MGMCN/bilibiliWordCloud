@@ -28,7 +28,7 @@ $ docker cp bilibili:/proj/bilibili/output.jpg /your/local/path # 别忘记了�
 ```
 当你在本地打开output.jpg后你就能看到  
 
-<img src="./images/output.jpg" width = "435" height = "300"/>  
+<img src="./images/output.jpg" width = "60%" height = "60%"/>  
 
 media_id的含义请参照 -> [如何找到对应番剧的media_id](#mediaid)
 ## 怎样在本地构建你自己的docker镜像
@@ -54,11 +54,11 @@ $ docker cp bilibili:/proj/bilibili/output.jpg /your/local/path # 别忘记了�
 
 打开你的b站找到一部你想爬取的番剧或者电影，只要有短评这个选项的都能爬。( ps: 请注意是短评不是评论🤪. ) 然后点击下面图示中的查看全部选项。   
 
-<img src="./images/page.png" width = "1140" height = "500"/>  
+<img src="./images/page.png" width = "80%" height = "80%"/>  
 
 复制打开页面的链接中md后面的那串数字，在这个例子中是'1586'
 
-<img src="./images/link.png" width = "790" height = "66"/>  
+<img src="./images/link.png" width = "60%" height = "60%"/>  
 
 
 
