@@ -28,7 +28,7 @@ $ docker cp bilibili:/proj/bilibili/output.jpg /your/local/path # 别忘记了�
 ```
 当你在本地打开output.jpg后你就能看到  
 
-<img src="https://github.com/MGMCN/bilibiliWordCloud/blob/main/bilibili/output.jpg" width = "435" height = "300"/>  
+<img src="./images/output.jpg" width = "435" height = "300"/>  
 
 media_id的含义请参照 -> [如何找到对应番剧的media_id](#mediaid)
 ## 怎样在本地构建你自己的docker镜像
